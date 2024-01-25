@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include "NumClass.h"
 
-// my function
+// declare functions
 int factorial(int x);
 
+// function to calculate factorial
 int factorial(int x)
 {
     if(x == 0|| x==1)
@@ -12,7 +13,7 @@ int factorial(int x)
     return (x *factorial(x-1));
 }
 
-/* will return if a number is prime*/
+// function to check if a number is an prime number
 int isPrime(int a) {
 
     if (a < 1) 
@@ -29,10 +30,7 @@ int isPrime(int a) {
     return 1; // Prime number
 }
 
-/*Strong number is a special number whose sum of the factorial of digits is equal to the original
-number. For Example: 145 is strong number
-1! + 4! + 5! = 145
-*/
+// function to check if a number is a strong number
 int isStrong(int a) 
 {
     int ans = a;
