@@ -7,7 +7,7 @@ int power(int numberD, int digit);
 int isArmstrong(int a);
 int isPalindrome(int a);
 
-// Your numberD function definition
+// function to calculate number of digits
 int numberD(int a) {
     int digitCount = 0;
     while (a > 0) {
@@ -17,7 +17,7 @@ int numberD(int a) {
     return digitCount; 
 }
 
-// Your power function definition
+// function to calculate power
 int power(int numberD, int digit) {
     int i, sum = 1;
     for (i = 0; i < numberD; i++) {
@@ -26,7 +26,7 @@ int power(int numberD, int digit) {
     return sum;
 }
 
-// Your isArmstrong function definition
+// function to check if number is Armstrong
 int isArmstrong(int a) {
     int num = a;
     int digits = numberD(a);
@@ -40,7 +40,7 @@ int isArmstrong(int a) {
     return (ans == sum);
 }
 
-// Your isPalindrome function definition
+// function to check if number is Palindrome
 int isPalindrome(int a) {
     int digits = numberD(a);
 
