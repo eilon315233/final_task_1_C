@@ -10,7 +10,7 @@ int power(int numberD, int digit) {
     return sum;
 }
 
-// Function to count digits using recursion
+// Recursive function to count the number of digits in a number
 int countDigits(int a) {
     if (a == 0) {
         return 0;
@@ -19,8 +19,8 @@ int countDigits(int a) {
     }
 }
 
-// Recursive function to check if a number is a palindrome
-int isPalindromeHelper(int num, int original) { // Fix: Added 'original' as an argument
+// Helper function to check if a number is a palindrome
+int isPalindromeHelper(int num, int original) { 
     int reverse = 0;
 
     while (num > 0) {
@@ -32,7 +32,7 @@ int isPalindromeHelper(int num, int original) { // Fix: Added 'original' as an a
     return (original == reverse);
 }
 
-// Recursive function to check if a number is a strong number
+// function to calculate sum of digits
 int getSumOfDigits(int a, int p)
 {
     if (a == 0) 
@@ -40,7 +40,7 @@ int getSumOfDigits(int a, int p)
     return (power(p, a % 10) + getSumOfDigits(a / 10, p));
 }
 
-// Function to check if a number is an Armstrong number
+// function to check if a number is an Armstrong number
 int isArmstrong(int a)
 {
     return ((a== getSumOfDigits(a, countDigits(a)))?1:0);
